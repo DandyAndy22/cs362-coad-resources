@@ -9,7 +9,7 @@ made available by members of Community Organizations Active in Disaster.
 Clone the repository:
 
 ```
-git clone git@github.com:osu-cascades/coad-resources.git
+git clone git@github.com:DandyAndy22/cs362-coad-resources.git
 ```
 
 This is a Rails application that uses SQLite in development and PostgreSQL in production.
