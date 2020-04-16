@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
 	it {should belong_to(:organization)}
-end
-
-RSpec.describe User do
-	it {should expect(:email).to "justin@mail.com"}
+	it "has an email" do
+		user = User.new 
+		expect(user).to respond_to(:email)
+	end
 end
 
