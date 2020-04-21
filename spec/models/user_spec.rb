@@ -23,6 +23,9 @@ RSpec.describe User, type: :model do
 		it "validates length of email" do
 			expect(user).to validate_length_of(:email).is_at_least(1).is_at_most(255).on(:create)
 		end
+		it "validates uniqueness of email" do
+			expect(user).to validate_uniqueness_of(:email).case_insensitive 
+		end
 	end
 	# validations
 		# format of email
