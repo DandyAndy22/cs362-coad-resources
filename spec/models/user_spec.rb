@@ -16,13 +16,6 @@ RSpec.describe User, type: :model do
 		end
 	end
 	
-	describe "existence" do
-		it "exists" do
-			user = User.new
-			expect(user)
-		end
-	end
-	
 	describe "validations" do
 		it "validates email" do
 			user = User.new
