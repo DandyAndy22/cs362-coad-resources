@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
 	
-	let(:user) {User.new}
+	let(:user) {User.new(email: 'test@mail.com')}
 
 	describe "attributes" do
 		it "has an email" do
@@ -33,11 +33,15 @@ RSpec.describe User, type: :model do
 			expect(user).to validate_length_of(:password).is_at_least(7).is_at_most(255).on(:create)
 		end
 	end
+
+	describe "#to_s" do
+		it "has a string representation of email" do
+			expect(user.to_s).to eq(user.email)
+		end
+	end
+
 	# validations
 		# format of email
-		# presence of password
-		# length of password
-
 		# optional relationship????
 
 	# behavior
