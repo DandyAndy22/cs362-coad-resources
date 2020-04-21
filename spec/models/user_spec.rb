@@ -45,22 +45,7 @@ RSpec.describe User, type: :model do
 			expect(user.role).to eq("organization")
 		end
 	end
-
-
+end
 	# validations
 		# format of email
 		# optional relationship????
-
-	# behavior
-
-
-end
-
-	
-
-
-
-
-
-
-
