@@ -28,11 +28,12 @@ RSpec.describe User, type: :model do
 			user = User.new
 			expect(user).to validate_presence_of(:email)
 		end
+		it "validates length of email" do
+			user = User.new
+			expect(user).to validate_length_of(:email).is_at_least(1).is_at_most(255).on(:create)
+		end
 	end
-
 	# validations
-		# presence of email
-		# length of email
 		# format of email
 		# uniqueness of email
 
