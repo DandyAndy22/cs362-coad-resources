@@ -40,6 +40,13 @@ RSpec.describe User, type: :model do
 		end
 	end
 
+	describe "#set_default_role" do
+		it "has a default role" do
+			expect(user.role).to eq("organization")
+		end
+	end
+
+
 	# validations
 		# format of email
 		# optional relationship????
