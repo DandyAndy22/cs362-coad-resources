@@ -15,18 +15,24 @@ RSpec.describe User, type: :model do
 			expect(user).to belong_to(:organization)
 		end
 	end
+	
+	describe "existence" do
+		it "exists" do
+			user = User.new
+			expect(user)
+		end
+	end
 
-end
 	# existence
 	
-	# attributes
-		
-	# relationships
-		#it {should belong_to(:organization)}
 	# validations
 
 	# behavior
 
+
+end
+
+	
 
 
 
