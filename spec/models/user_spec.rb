@@ -22,10 +22,24 @@ RSpec.describe User, type: :model do
 			expect(user)
 		end
 	end
-
-	# existence
 	
+	describe "validations" do
+		it "validates email" do
+			user = User.new
+			expect(user).to validate_presence_of(:email)
+		end
+	end
+
 	# validations
+		# presence of email
+		# length of email
+		# format of email
+		# uniqueness of email
+
+		# presence of password
+		# length of password
+
+		# optional relationship????
 
 	# behavior
 
