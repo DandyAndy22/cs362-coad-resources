@@ -8,11 +8,11 @@ RSpec.describe Region, type: :model do
 		end
 	end
 
-	# describe "attributes" do
-	# 	it "has a name!!!!" do
-	# 		expect(Region.new).to respond_to(:name)
-	# 	end
-	# end
+	describe "attributes" do
+		it "has a name!!!!" do
+			expect(Region.new).to respond_to(:name)
+		end
+	end
 
 	# properties
 	# validations
