@@ -48,4 +48,4 @@ RSpec.describe User, type: :model do
 end
 	# validations
 		# format of email
-		# optional relationship????
+		# optional relationship?
