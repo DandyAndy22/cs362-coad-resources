@@ -4,7 +4,9 @@ RSpec.describe Organization, type: :model do
 
 	let(:organization) {Organization.new(
 							status: :approved,
-							transportation: :yes
+							transportation: :yes,
+							agreement_one: "hello world"
+
 							)}
 
 	describe 'attributes' do
@@ -14,9 +16,22 @@ RSpec.describe Organization, type: :model do
 		it 'has a transportation' do
 			expect(organization.transportation).to eq("yes")
 		end
+		it 'has an agreement' do
+			expect(organization.agreement_one).to eq("hello world")
+		end
 	end
 
-	# attributes
+	describe 'relationships' do
+		it 'has many users' do
+			expect(organization).to have_many(:users)
+		end
+	end
+
+
+	#validations:
+		#factory for testing the various statuses? 
+		#how to efficiently test for attr_accessors
+
 	# relationships
 	# validations
 	# methods
