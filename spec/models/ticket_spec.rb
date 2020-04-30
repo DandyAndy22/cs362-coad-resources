@@ -13,6 +13,21 @@ RSpec.describe Ticket, type: :model do
 		end
 	end
 
+	describe 'Validations' do
+		it 'validates presence of name' do
+			expect(ticket).to validate_presence_of(:name)
+		end
+		it 'validates presence of phone' do
+			expect(ticket).to validate_presence_of(:phone)
+		end
+		it 'validates presence of region_id' do
+			expect(ticket).to validate_presence_of(:region_id)
+		end
+		it 'validates presence of resource_category' do
+			expect(ticket).to validate_presence_of(:resource_category)
+		end
+	end
+
 	describe 'Relationships' do
 		it 'belongs to a region' do
 			expect(ticket).to belong_to(:region)
