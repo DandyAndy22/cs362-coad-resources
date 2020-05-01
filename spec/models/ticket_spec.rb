@@ -23,6 +23,7 @@ RSpec.describe Ticket, type: :model do
 		it 'validates the length of description' do
 			expect(ticket).to validate_length_of(:description).is_at_most(1020).on(:create)
 		end
+
 	end
 
 	describe 'Relationships' do
@@ -35,13 +36,33 @@ RSpec.describe Ticket, type: :model do
 		it 'belongs to an organization' do
 			expect(ticket).to belong_to(:organization)
 		end
+		#it 'validates phone number' do
+		#	ticket = ticket()
+		#	expect(ticket).to be_valid
+		#	ticket.phone = 'INVALID'
+		#	expect(ticket).to be_invalid
+		#end	
 	end
 
 	describe 'Behavior' do
 		it 'is open' do
+			ticket.closed = false
+			expect(ticket.closed).to eq(false)
+			#expect(ticket.when(closed: false)).to be_falsey
+		end
+		it 'is closed' do
+			expect(ticket.closed).to eq(true)
+		end
+		it 'has an organization and is open' do
+			ticket.closed = false
+			expect(ticket.organization_id).not_to be(nil) 
+		end	
+		it 'has an organization and is closed' do
+			expect(ticket.organization_id).not_to be(nil)
 		end
 	end
 
 	# Attributes
+	# Methods
 
 end
