@@ -41,9 +41,7 @@ RSpec.describe Ticket, type: :model do
 	end
 
 	describe 'Behavior' do
-
 		it 'is open' do
-			
 		end
 	end
 

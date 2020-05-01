@@ -22,8 +22,7 @@ RSpec.describe Region, type: :model do
 			expect(region).to validate_length_of(:name).is_at_least(1).is_at_most(255).on(:create)
 		end
 		it "has unique name" do
-			this_region = Region.new(name: 'The')
-			expect(this_region.name).valid be_falsey
+			expect(region).to validate_uniqueness_of(:name)
 		end
 	end
 
