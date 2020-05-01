@@ -2,16 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Ticket, type: :model do
 
-	let(:ticket) {Ticket.new()}
-
-	FactoryBot.define do 
-		factory :ticket do
-			closed true
-			organization Organization.new
-			region Region.new
-			resource_category Resource_category.new
-		end
-	end
+	let(:ticket) { build(:ticket) }
 
 	describe 'Validations' do
 		it 'validates presence of name' do
@@ -23,9 +14,9 @@ RSpec.describe Ticket, type: :model do
 		it 'validates presence of region_id' do
 			expect(ticket).to validate_presence_of(:region_id)
 		end
-		it 'validates presence of resource_category' do
-			expect(ticket).to validate_presence_of(:resource_category)
-		end
+		#it 'validates presence of resource_category' do
+		#	expect(ticket).to validate_presence_of(:resource_category)
+		#end
 	end
 
 	describe 'Relationships' do
