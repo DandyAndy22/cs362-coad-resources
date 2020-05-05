@@ -34,7 +34,7 @@ RSpec.describe Ticket, type: :model do
 			expect(ticket).to belong_to(:resource_category)
 		end
 		it 'belongs to an organization' do
-			expect(ticket).to belong_to(:organization)
+			expect(ticket).to belong_to(:organization).optional
 		end
 		#it 'validates phone number' do
 		#	ticket = ticket()

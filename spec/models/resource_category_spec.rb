@@ -25,13 +25,13 @@ RSpec.describe ResourceCategory, type: :model do
 # should I still be writing tests for all of these?
 # the coverage doc says that these are covered already
 
-#methods
+# can this only be called by the class? how do I test it?
 	# describe "#self.unspecified" do
 	# 	it "has a category named 'Unspecified', or it creates one" do
 	# 		resource_category.unspecified
 	# 	end
 	# end
-	
+
 	describe 'getters and setters for active' do
 		it 'activates' do
 			resource_category.activate
