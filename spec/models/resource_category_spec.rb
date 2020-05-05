@@ -31,15 +31,22 @@ RSpec.describe ResourceCategory, type: :model do
 	# 		resource_category.unspecified
 	# 	end
 	# end
-	describe 'activate and deactivate methods' do
+	describe 'getters and setters for active' do
 		it 'activates' do
 			resource_category.activate
 			expect(resource_category.active).to eq(true)
 		end
-
 		it 'deactivates' do
 			resource_category.deactivate
 			expect(resource_category.active).to eq(false)
+		end
+		it 'returns true if active status is false' do
+			resource_category.deactivate
+			expect(resource_category.inactive?).to eq(true)
+		end
+		it 'returns false if active status is true' do
+			resource_category.activate
+			expect(resource_category.inactive?).to eq(false)
 		end
 
 	end

@@ -24,7 +24,7 @@ class ResourceCategory < ApplicationRecord
 
   def inactive?
     !active?
-  end
+  end #ohmygodwhathorriblenameisthis?
 
   def to_s
     name
