@@ -2,12 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Organization, type: :model do
 
-	let(:organization) {Organization.new(
-							status: :approved,
-							transportation: :yes,
-							agreement_one: "hello world"
-
-							)}
+	let(:organization) { build(:organization) }
 
 	describe 'attributes' do
 		it 'has an approved status' do
