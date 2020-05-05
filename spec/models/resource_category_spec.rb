@@ -36,6 +36,12 @@ RSpec.describe ResourceCategory, type: :model do
 			resource_category.activate
 			expect(resource_category.active).to eq(true)
 		end
+
+		it 'deactivates' do
+			resource_category.deactivate
+			expect(resource_category.active).to eq(false)
+		end
+
 	end
 
 
