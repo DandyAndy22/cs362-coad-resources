@@ -22,7 +22,13 @@ RSpec.describe ResourceCategory, type: :model do
 		end
 	end
 #validations
+# should I still be writing tests for all of these?
+# the coverage doc says that these are covered already
 
 #methods
-
+	describe "#to_s" do
+		it "has a string representation of name" do
+			expect(resource_category.to_s).to eq(resource_category.name)
+		end
+	end
 end 
