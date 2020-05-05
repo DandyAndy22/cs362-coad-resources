@@ -5,8 +5,6 @@ RSpec.describe RegionsController, type: :controller do
 		describe '/regions' do
 			specify { expect(get(:index)).to redirect_to(new_user_session_path) }
 		end
-		#cannot do anything
-		#route to login
 	end
 	context 'As an organization user' do
 		#cannot do anything
