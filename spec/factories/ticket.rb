@@ -4,6 +4,6 @@ FactoryBot.define do
 		phone { '4254543232' }
 		organization_id { '23' }
 		id {'2'}
-		organization {build(:organization)}
+		
 	end
 end

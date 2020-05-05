@@ -76,6 +76,7 @@ RSpec.describe Ticket, type: :model do
 
 	describe 'ticket caputured? method' do
 		it 'returns true if organization is present' do
+			ticket.organization = build(:organization)
 			expect(ticket.captured?).to eq(true)
 		end
 
