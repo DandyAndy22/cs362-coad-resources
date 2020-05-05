@@ -74,6 +74,14 @@ RSpec.describe Ticket, type: :model do
 	
 	end
 
+	describe 'ticket caputured? method' do
+		it 'returns true if organization is present' do
+			expect(ticket.captured?).to eq(true)
+		end
+
+	end
+
+
 	describe "#to_s" do
 		it "has a string representation of Ticket id" do
 			expect(ticket.to_s).to eq("Ticket 2")

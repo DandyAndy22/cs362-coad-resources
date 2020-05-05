@@ -3,5 +3,6 @@ FactoryBot.define do
 		status { :approved }
 		transportation { :yes }
 		agreement_one { "hello world"}
+		id {'5'}
 	end
 end
