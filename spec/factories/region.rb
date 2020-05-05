@@ -1,5 +1,5 @@
-	FactoryBot.define do 
-		factory :region do
-			name { 'Fake' }
-		end
+FactoryBot.define do 
+	factory :region do
+		name { 'Fake' }
 	end
+end
