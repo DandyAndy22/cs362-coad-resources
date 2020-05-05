@@ -62,7 +62,12 @@ RSpec.describe Ticket, type: :model do
 		end
 	end
 
-	# Attributes
+	describe "#to_s" do
+		it "has a string representation of Ticket id" do
+			expect(ticket.to_s).to eq("Ticket 2")
+		end
+	end
+
 	# Methods
 
 end
