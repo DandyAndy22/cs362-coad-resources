@@ -31,6 +31,7 @@ RSpec.describe ResourceCategory, type: :model do
 	# 		resource_category.unspecified
 	# 	end
 	# end
+	
 	describe 'getters and setters for active' do
 		it 'activates' do
 			resource_category.activate
@@ -51,11 +52,10 @@ RSpec.describe ResourceCategory, type: :model do
 
 	end
 
-
-
 	describe "#to_s" do
 		it "has a string representation of name" do
 			expect(resource_category.to_s).to eq(resource_category.name)
 		end
 	end
+
 end 
