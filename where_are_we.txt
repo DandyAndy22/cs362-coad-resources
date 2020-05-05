@@ -3,14 +3,10 @@ May 5th, 2020
 
 We haven't 
 
-	2.1		drawn out the models
+	2.1	Drawn out the models
 	
-	2.3		Created a diagram: draw a rough ER or UML diagram that uses a box for each model class, and annotate the attributes of each class.
+	2.3	Created a diagram: draw a rough ER or UML diagram that uses a box for each model class, and annotate the attributes of each class.
 
-	2.4 refactor tests
+	2.4 Refactor tests
 
-	2.5  draw a line representing each relationship you find. Then, annotate each line with either 1:1, 1:M, and M:N to describe the cardinality of the relationship.
-
-	2.6 
-	Updated shoulda-matchers to v 4.0.0+
-		test for optional relationships
+	2.5 Draw a line representing each relationship you find. Then, annotate each line with either 1:1, 1:M, and M:N to describe the cardinality of the relationship.
