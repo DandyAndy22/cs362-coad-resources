@@ -26,6 +26,11 @@ RSpec.describe Region, type: :model do
 		end
 	end
 
+	describe "#to_s" do
+		it "has a string representation of name" do
+			expect(region.to_s).to eq(region.name)
+		end
+	end
 
 
 	# properties
