@@ -62,12 +62,19 @@ RSpec.describe Ticket, type: :model do
 		end
 	end
 
+	describe 'ticket open status method' do
+		it 'returns false if closed status is true' do
+			ticket.closed = :true
+			expect(ticket.open?).to eq(false)
+		end
+	
+	end
+
+
 	describe "#to_s" do
 		it "has a string representation of Ticket id" do
 			expect(ticket.to_s).to eq("Ticket 2")
 		end
 	end
-
-	# Methods
 
 end
