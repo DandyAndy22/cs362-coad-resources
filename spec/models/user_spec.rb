@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
 	
-	let(:user) {User.new(email: 'test@mail.com')}
+	let(:user) { build(:user) }
 
 	describe "attributes" do
 		it "has an email" do
