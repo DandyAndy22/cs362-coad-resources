@@ -26,6 +26,20 @@ RSpec.describe ResourceCategory, type: :model do
 # the coverage doc says that these are covered already
 
 #methods
+	# describe "#self.unspecified" do
+	# 	it "has a category named 'Unspecified', or it creates one" do
+	# 		resource_category.unspecified
+	# 	end
+	# end
+	describe 'activate and deactivate methods' do
+		it 'activates' do
+			resource_category.activate
+			expect(resource_category.active).to eq(true)
+		end
+	end
+
+
+
 	describe "#to_s" do
 		it "has a string representation of name" do
 			expect(resource_category.to_s).to eq(resource_category.name)
