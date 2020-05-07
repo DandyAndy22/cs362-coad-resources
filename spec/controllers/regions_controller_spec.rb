@@ -7,7 +7,7 @@ RSpec.describe RegionsController, type: :controller do
 		end
 	end
 
-	context 'As a normal user' do
+	context 'As an organization user' do
 		let(:user) { create(:user) }
 		before(:each) { sign_in(user) }
 

@@ -10,4 +10,6 @@ We haven't
 	2.4 Refactor tests
 
 	2.5 Draw a line representing each relationship you find. Then, annotate each line with either 1:1, 1:M, and M:N to describe the cardinality of the relationship.
-	
+
+	3. Achieve near-100% test coverage of all helper methods.
+	Achieve near-100% test-coverage of all service classes.
