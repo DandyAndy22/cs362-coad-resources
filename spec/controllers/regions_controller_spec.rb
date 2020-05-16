@@ -22,7 +22,7 @@ RSpec.describe RegionsController, type: :controller do
 
 		describe 'GET #index' do
 			specify	{ expect(get(:index)).to be_successful }
-			end				
+		end				
 	end
 
 end
