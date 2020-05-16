@@ -24,5 +24,12 @@ RSpec.describe DashboardHelper, type: :helper do
     expect(dashboard_for(user)).to eq('organization_submitted_dashboard')
   end
 
+  it "returns organization_approved_dashboard" do
+    User.any_instance.stub(:admin?).and_return(false)
+    user = User.new
+    user.stub_chain(:organization, :submitted?).and_return(false)
+    user.stub_chain(:organization, :approved?).and_return(true)
+    expect(dashboard_for(user)).to eq('organization_approved_dashboard')
+  end
 
 end
