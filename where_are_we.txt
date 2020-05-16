@@ -13,3 +13,10 @@ We haven't
 
 	3. Achieve near-100% test coverage of all helper methods.
 	Achieve near-100% test-coverage of all service classes.
+
+
+	notes
+
+	pulled from application_helper spec:
+	#allow(full_title).to receive(:page_title).and_return(base_title) 
+			# allow()
