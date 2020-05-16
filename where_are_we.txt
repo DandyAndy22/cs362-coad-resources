@@ -1,22 +1,31 @@
 # Where are we
 May 5th, 2020
 
-We haven't 
+::TODO::
 
-	2.1	Drawn out the models
-	
-	2.3	Created a diagram: draw a rough ER or UML diagram that uses a box for each model class, and annotate the attributes of each class.
+Justin
+	2.1
+	Take a look at the app/models directory, and write down the names of the classes. Given your experience in using the app (Step 1.4 above), write down a short description of what each class represents. This is a draft of your present understanding, and you'll revise this later.
 
-	2.4 Refactor tests
+	Next, add a brief comment above each model class definition that contains your description.
 
+
+Andras
+	2.3	Create a diagram: draw a rough ER or UML diagram that uses a box for each model class, and annotate the attributes of each class.
+ 
 	2.5 Draw a line representing each relationship you find. Then, annotate each line with either 1:1, 1:M, and M:N to describe the cardinality of the relationship.
 
-	3. Achieve near-100% test coverage of all helper methods.
-	Achieve near-100% test-coverage of all service classes.
+-----------------------------
+	2.4 Refactor tests: Now that your instantiation tests pass - delete them.
 
 
-	notes
+	3.2: Implement tests for
+	find_or_create_by 
+		models/region 
+		models/resource_category
 
-	pulled from application_helper spec:
-	#allow(full_title).to receive(:page_title).and_return(base_title) 
-			# allow()
+
+	5.2: Finish controller tests
+
+	7:  Where are we implementing fakes, stubs and mocks?
+		Let's write it down
