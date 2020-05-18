@@ -22,7 +22,18 @@ RSpec.describe RegionsController, type: :controller do
 
 		describe 'GET #index' do
 			specify	{ expect(get(:index)).to be_successful }
-		end				
-	end
+		end	
 
+		describe 'use method' do
+			# it 'makes a new region' do
+			# 	expect(new).to be(Region.new)
+			# end
+
+			# it 'creates a region' do
+			# 	region = Region.new(region_params)
+			# 	expect(region.save).to eq('Region successfully created.')
+			# end
+		end
+
+	end
 end
