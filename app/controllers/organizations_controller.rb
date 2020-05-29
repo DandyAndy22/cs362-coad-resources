@@ -93,7 +93,7 @@ class OrganizationsController < ApplicationController
   end
 
   def verify_approved
-    redirect_to dashboard_path unless current_user.try(:organization).try(:approved?)
+    redirect_to dashboard_path unless current_user.try(:organization).try(:approved?) || current_user.admin?
   end
 
   def verify_user
