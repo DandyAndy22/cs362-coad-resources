@@ -14,7 +14,6 @@ FactoryBot.define do
 
 		trait :organization do
 			role {:organization}
-
 		end
 
 		after :create do |user|
