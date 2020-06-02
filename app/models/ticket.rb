@@ -1,3 +1,5 @@
+# This model represents 'tickets'. 
+# Tickets are a request for assistance from a public user (not a user in the system)
 class Ticket < ApplicationRecord
 
   belongs_to :region
