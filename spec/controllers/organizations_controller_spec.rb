@@ -10,6 +10,10 @@ RSpec.describe OrganizationsController, type: :controller do
 		specify 'GET #new' do
 			expect(get(:new)).to redirect_to(new_user_session_path)
 		end
+
+    specify 'PUT #create' do
+      expect(put(:create)).to redirect_to(new_user_session_path)
+    end
 	end
 
 	context 'As an admin' do
