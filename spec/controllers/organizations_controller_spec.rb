@@ -6,6 +6,10 @@ RSpec.describe OrganizationsController, type: :controller do
 		describe 'GET #index' do
 			specify { expect(get(:index)).to redirect_to(new_user_session_path) }
 		end
+
+		specify 'GET #new' do
+			expect(get(:new)).to redirect_to(new_user_session_path)
+		end
 	end
 
 	context 'As an admin' do
