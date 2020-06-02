@@ -10,5 +10,9 @@ FactoryBot.define do
 		transportation { :yes }
 		agreement_one { "hello world"}
 		id {'5'}
+
+		trait :submitted do
+			status {:submitted}
+		end
 	end
 end
