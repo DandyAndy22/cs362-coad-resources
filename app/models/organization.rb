@@ -1,3 +1,6 @@
+# An organization is a type of user that has applied to assist members of their community
+# => an organization may not have submitted an application yet, and they may or may not be approved
+
 class Organization < ApplicationRecord
 
   attr_accessor :agreement_one, :agreement_two, :agreement_three, :agreement_four, :agreement_five, :agreement_six, :agreement_seven, :agreement_eight
