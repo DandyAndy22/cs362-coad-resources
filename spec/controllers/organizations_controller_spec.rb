@@ -34,7 +34,7 @@ RSpec.describe OrganizationsController, type: :controller do
     end
 
     specify 'PUT #reject' do
-      expect(put :approve, params: {id: 'FAKE', name: 'FAKE'} ).to redirect_to(new_user_session_path)
+      expect(put :reject, params: {id: 'FAKE', name: 'FAKE'} ).to redirect_to(new_user_session_path)
     end
 
     specify 'PUT #set_organization' do
