@@ -28,6 +28,7 @@ RSpec.describe 'Creating an organization application', type: :feature do
 			fill_in "organization_description", with: "Pretty sweet association"
 			choose("organization_transportation_yes")
 			click_on "Apply"
+			skip
 			save_and_open_page
 		end
 	end
