@@ -1,3 +1,5 @@
+# Regions represent the region of central oregon that a public user is requesting aid to
+# => Not to be confused with a 'user' in the system
 class Region < ApplicationRecord
 
   has_many :tickets
