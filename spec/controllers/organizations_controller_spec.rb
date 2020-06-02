@@ -31,8 +31,7 @@ RSpec.describe OrganizationsController, type: :controller do
     end
 
     specify 'PUT #approve' do
-      skip
-      expect(put(:approve)).to redirect_to(new_user_session_path)
+      expect(put :approve, params: {id: 'FAKE', name: 'FAKE'} ).to redirect_to(new_user_session_path)
     end
 	end
 
