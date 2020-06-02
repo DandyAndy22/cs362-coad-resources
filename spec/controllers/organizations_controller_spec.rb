@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe OrganizationsController, type: :controller do
-  let(:organization) { create(:organization) }
 
 	context 'As a public user' do
 		describe 'GET #index' do
@@ -37,6 +36,11 @@ RSpec.describe OrganizationsController, type: :controller do
     specify 'PUT #reject' do
       expect(put :approve, params: {id: 'FAKE', name: 'FAKE'} ).to redirect_to(new_user_session_path)
     end
+
+    specify 'PUT #set_organization' do
+      expect(put :approve, params: {id: 'FAKE', name: 'FAKE'} ).to redirect_to(new_user_session_path)
+    end
+
 	end
 
 	context 'As an admin' do
