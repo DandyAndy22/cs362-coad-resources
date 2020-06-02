@@ -14,6 +14,11 @@ RSpec.describe OrganizationsController, type: :controller do
     specify 'PUT #create' do
       expect(put(:create)).to redirect_to(new_user_session_path)
     end
+
+    specify 'POST #edit' do
+      skip
+      expect(post(:edit)).to redirect_to(new_user_session_path)
+    end
 	end
 
 	context 'As an admin' do
