@@ -22,8 +22,7 @@ RSpec.describe OrganizationsController, type: :controller do
     end
 
     specify 'PUT #update' do
-      skip
-      expect(put(:update)).to redirect_to(new_user_session_path)
+      expect(put :update, params: {id: 'FAKE'} ).to redirect_to(new_user_session_path)
     end
 
     specify 'GET #show' do
