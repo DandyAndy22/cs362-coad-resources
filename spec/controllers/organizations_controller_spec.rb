@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe OrganizationsController, type: :controller do
+  let(:organization) { create(:organization) }
 
 	context 'As a public user' do
 		describe 'GET #index' do
@@ -27,12 +28,12 @@ RSpec.describe OrganizationsController, type: :controller do
 
     specify 'GET #show' do
       skip
-      expect(put(:update)).to redirect_to(new_user_session_path)
+      expect(put(:show)).to redirect_to(new_user_session_path)
     end
 
     specify 'PUT #approve' do
       skip
-      expect(put(:update)).to redirect_to(new_user_session_path)
+      expect(put(:approve)).to redirect_to(new_user_session_path)
     end
 	end
 
