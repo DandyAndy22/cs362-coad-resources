@@ -1,3 +1,5 @@
+# Resource categories are types of assistance or resources that an organization 
+#   might be able to offer to public users (not to be confused with 'users' in the codebase)
 class ResourceCategory < ApplicationRecord
 
   has_and_belongs_to_many :organizations
