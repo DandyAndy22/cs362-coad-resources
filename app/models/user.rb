@@ -1,3 +1,5 @@
+# This model represents a generic user. A user may be an admin or an organization
+# Users have specific attribute requirements (email etc.)
 class User < ApplicationRecord
 
   enum role: [:admin, :organization]
