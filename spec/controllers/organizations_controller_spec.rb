@@ -24,7 +24,11 @@ RSpec.describe OrganizationsController, type: :controller do
       skip
       expect(put(:update)).to redirect_to(new_user_session_path)
     end
-    
+
+    specify 'GET #show' do
+      skip
+      expect(put(:update)).to redirect_to(new_user_session_path)
+    end
 	end
 
 	context 'As an admin' do
